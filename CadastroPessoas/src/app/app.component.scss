@@ -5,6 +5,8 @@
 
     .headerText {
         font-size: 30px;
+
+        font-weight: 700;
     }
 }
 
@@ -12,8 +14,13 @@
     margin-top: 3vh;
 
     .option {
-        padding: 15px;
+        padding: 2vh;
     }
+}
+
+.choiceContainer {
+    border-bottom: 2px solid black; 
+    width: 100%;
 }
 
 .showPessoasContainer {
@@ -22,5 +29,25 @@
     display: flex;
     justify-content: center;
     
-    margin-top: 5vh;
+    margin-top: 3vh;
+
+    table {
+        width: 100%;
+
+        border: 2px solid black;
+    }
+
+    th {
+        border: 2px solid black;
+        font-weight: bold;
+    }
+
+    td {
+        border: 2px solid black;
+        padding: 3vh;
+    }
+
+    button {
+        margin: 2px;
+    }
 }

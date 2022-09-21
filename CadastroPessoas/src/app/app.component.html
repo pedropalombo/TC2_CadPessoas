@@ -10,6 +10,8 @@
     <span class="option cadastrar">Cadastrar Pessoa</span>
   </div>
 
+  <div class="containerSeparation"></div>
+
   <div class="showPessoasContainer">
     <table>
       <tr>
@@ -20,9 +22,9 @@
           Opção
         </th>
       </tr>
-      <tr>
+      <tr *ngFor="let pessoa of pessoaLista">
         <td>
-          nome1
+          {{pessoa.nome}}
         </td>
         <td>
           <button>Ver Perfil</button>
