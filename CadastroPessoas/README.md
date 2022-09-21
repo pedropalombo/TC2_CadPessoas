@@ -1,3 +1,17 @@
+# Atenção Vagabas
+
+Os arquivos tem seus respectivos TODOs em forma de comentario. Antes de fazerem as parada, procurem por eles antes de implementar a lógica q tão bolando, pra nn precisar ficar rachando a mente atoa.
+
+Além disso, sempre q forem adicionar algo novo, criem uma branch onde vão fazer as mudanças, usando essa nomenclatura:
+-> 'feature/<titulo-pra-feature>': pra coisas novas que ainda não estão no código
+-> 'fix/<tema-concerto-da-feature>': pra debbugs das features
+
+A branch 'develop' serve como um meio-campo de teste, antes de a gente jogar tudo na master. previne ter q ficar fazer rollback e os krl.
+
+OBS: lembrem-se de nn trabalhar direto na master, e sim na suas respectivas branches. nn q seja impossivel de resolver, mas a gente tem mais cerebro q isso B)
+PS: linha de merge fica ent:
+  |-> feature|fix/... -> develop -> master
+
 # CadastroPessoas
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.2.
