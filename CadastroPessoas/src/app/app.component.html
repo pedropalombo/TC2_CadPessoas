@@ -1,17 +1,28 @@
+<!-- main page container -->
 <div class="mainPageContainer">
   <div class="headerContainer">
+
+      <!-- header text -->
       <span class="headerText">
           Cadastro de Pessoas
       </span>
   </div>
 
+  <!-- TODO: add a 'chosen' style for when the option is selected -->
+  <!-- navigation text options -->
   <div class="choiceContainer">
-    <span class="option listar">Listar Pessoas</span>
-    <span class="option cadastrar">Cadastrar Pessoa</span>
+
+    <!-- TODO: make the click send user to the respective page -->
+    <!-- using 'showProfile' for testing -->
+    <span class="option listar" (click)="showProfile(11111)">Listar Pessoas</span>
+    <span class="option cadastrar" (click)="alertada()">Cadastrar Pessoa</span>
   </div>
 
+  <!-- dividing line after the nav options -->
   <div class="containerSeparation"></div>
 
+  <!-- TODO: put this in 'listar-pessoas'-->
+  <!-- showing 'pessoas' using table -->
   <div class="showPessoasContainer">
     <table>
       <tr>

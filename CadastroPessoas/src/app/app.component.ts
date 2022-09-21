@@ -9,10 +9,29 @@ import { Pessoa } from './pessoa';
 export class AppComponent {
   title = 'CadastroPessoas';
 
-  public pessoaNome : String = "ulala";
-  public pessoaLista : Array<Pessoa> = [];
+  public pessoaLista : Array<Pessoa> = []; //placeholder array of Pessoa
+
+  //placeholder function
+  alertada() {
+    alert("Ainda nn faz nada");
+  }
+
+  //TODO: showProfile's logic is 'mostrar-perfil'
+  //basic idea on how to go through/find people on "pessoaLista"
+  showProfile(idPassado : number) {
+    for(var pessoa in this.pessoaLista) {
+      if(this.pessoaLista[pessoa].id == idPassado) {
+        alert(this.pessoaLista[pessoa].id+
+          '\n'+
+          this.pessoaLista[pessoa].nome+
+          '\n'+
+          this.pessoaLista[pessoa].email);
+      }
+    }
+  }
 
   ngOnInit(): void {
+    //placeholder array for testing purposes
     this.pessoaLista = [
       {
         id: 11111,
