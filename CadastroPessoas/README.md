@@ -2,7 +2,7 @@
 
 Os arquivos tem seus respectivos TODOs em forma de comentario. Antes de fazerem as parada, procurem por eles antes de implementar a lógica q tão bolando, pra nn precisar ficar rachando a mente atoa.
 
-Além disso, sempre q forem adicionar algo novo, criem uma branch onde vão fazer as mudanças, usando essa nomenclatura:
+Além disso, sempre q forem adicionar algo novo, criem uma branch onde vão fazer as mudanças, usando essa nomenclatura:<br>
 -> 'feature/titulo-pra-feature': pra coisas novas que ainda não estão no código<br>
 -> 'fix/tema-concerto-da-feature': pra debbugs das features<br>
 
