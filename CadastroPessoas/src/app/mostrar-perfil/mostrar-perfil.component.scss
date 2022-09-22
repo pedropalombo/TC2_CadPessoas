@@ -1,0 +1,23 @@
+.mainPageContainer {
+    text-align: center;
+
+    position: relative;
+
+    .headerText {
+        font-size: 30px;
+
+        font-weight: 700;
+    }
+}
+
+
+.choiceContainer {
+    border-bottom: 2px solid black; 
+    width: 100%;
+
+    margin-top: 3vh;
+
+    .option {
+        padding: 2vh;
+    }
+}

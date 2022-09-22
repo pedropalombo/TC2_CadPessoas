@@ -11,6 +11,9 @@
 }
 
 .choiceContainer {
+    border-bottom: 2px solid black; 
+    width: 100%;
+
     margin-top: 3vh;
 
     .option {
@@ -18,10 +21,6 @@
     }
 }
 
-.choiceContainer {
-    border-bottom: 2px solid black; 
-    width: 100%;
-}
 
 .showPessoasContainer {
     //margin: 0 auto;
