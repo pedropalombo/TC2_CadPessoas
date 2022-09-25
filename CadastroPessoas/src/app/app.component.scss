@@ -28,26 +28,45 @@
 
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+    .showPessoasTitle{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .showPessoas{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        border: 2px solid black;
+
+        padding: 30px;
+        margin-bottom: 10px;
+        .showPessoasNome{
+            width: 50%;
+        }
+        .showPessoasOpcoes {
+            width: 50%;
+            display: flex;
+            justify-content: center;
     
-    margin-top: 3vh;
-
-    table {
-        width: 100%;
-
-        border: 2px solid black;
-    }
-
-    th {
-        border: 2px solid black;
-        font-weight: bold;
-    }
-
-    td {
-        border: 2px solid black;
-        padding: 3vh;
-    }
-
-    button {
-        margin: 2px;
+            button {
+                margin-left: 10px;
+                width: 15%;
+                padding: 10px 0px;
+                border-radius: 8px;
+            }
+            .showPessoasPerfil{
+                background-color: green;
+            }
+            .showPessoasEditar{
+                background-color: yellow;
+            }
+            .showPessoasDeletar{
+                background-color: red;
+            }
+        }
     }
 }
