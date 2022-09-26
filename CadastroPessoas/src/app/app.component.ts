@@ -7,8 +7,7 @@ import { Pessoa } from './pessoa';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'CadastroPessoas';
-
+  
   public pessoaLista : Array<Pessoa> = []; //placeholder array of Pessoa
 
   //placeholder function
