@@ -14,27 +14,22 @@
 
     <!-- TODO: make the click send user to the respective page -->
     <!-- using 'showProfile' for testing -->
-    <a class="option listar" (click)="showProfile(11111)" routerLink="/mostrar-perfil">Listar Pessoas</a>
-    <a class="option cadastrar" (click)="alertada()">Cadastrar Pessoa</a>
+    <nav class="navigationContainer">
+      <a class="option listar" routerLink="/listar-pessoas">Listar Pessoas</a>
+      <a class="option cadastrar" routerLink="/cadastrar-pessoa">Cadastrar Pessoa</a>
+    </nav>
   </div>
 
   <!-- dividing line after the nav options -->
   <div class="containerSeparation"></div>
 
-  <!-- TODO: put this in 'listar-pessoas'-->
-  <!-- showing 'pessoas' using table -->
-  <div class="showPessoasContainer">
-    <div class="showPessoasTitle">
-      <h2>Nome</h2>
-      <h2>Opções</h2>
-    </div>
-      <div class="showPessoas" *ngFor="let pessoa of pessoaLista">
-        <span class="showPessoasNome">{{ pessoa.nome }}</span>   
-        <div class="showPessoasOpcoes">
-          <button class="showPessoasPerfil">Ver Perfil</button>
-          <button class="showPessoasEditar">Editar</button>
-          <button class="showPessoasDeletar">Deletar</button>
-        </div>
-      </div>
+  <div class="presentationContainer">
+    <span> Projeto feito pelos magnânimos:
+      Pedro Palombo
+      Yuri Leonel
+      Denilson Andrade 
+    </span>
   </div>
+
+  <router-outlet></router-outlet>
 </div>
