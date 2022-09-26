@@ -1,1 +1,16 @@
-<p>listar-pessoas works!</p>
+<!-- TODO: put this in 'listar-pessoas'-->
+<!-- showing 'pessoas' using table -->
+<div class="showPessoasContainer">
+    <div class="showPessoasTitle">
+        <h2>Nome</h2>
+        <h2>Opções</h2>
+    </div>
+    <div class="showPessoas" *ngFor="let pessoa of pessoaLista">
+        <span class="showPessoasNome">{{ pessoa.nome }}</span>
+        <div class="showPessoasOpcoes">
+            <button class="showPessoasPerfil" routerLink="/mostrar-perfil">Ver Perfil</button>
+            <button class="showPessoasEditar">Editar</button>
+            <button class="showPessoasDeletar">Deletar</button>
+        </div>
+    </div>
+</div>
