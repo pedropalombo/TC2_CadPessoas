@@ -1,5 +1,28 @@
-main {
-    color: black;
+.mainPageContainer {
+    text-align: center;
 
-    background-color: aquamarine;
+    position: relative;
+
+    .headerText {
+        font-size: 30px;
+
+        font-weight: 700;
+    }
+}
+
+.choiceContainer {
+    margin-top: 3vh;
+
+    .option {
+        padding: 2vh;
+    }
+}
+
+.choiceContainer {
+    border-bottom: 2px solid black; 
+    width: 100%;
+}
+
+.presentationContainer {
+    font-style: italic;
 }
