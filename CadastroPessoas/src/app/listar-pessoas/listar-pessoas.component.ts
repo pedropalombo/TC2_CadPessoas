@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
 import { Pessoa } from '../pessoa';
 
 @Component({
@@ -10,39 +10,39 @@ export class ListarPessoasComponent implements OnInit {
 
   constructor() { }
 
-  public pessoaLista : Array<Pessoa> = [];
+  @Output() pessoaSelecionada : any;
+  @Output() pessoaLista : Array<Pessoa> = [
+    {
+      id: '11111',
+      nome: 'ullll',
+      dataNasc: undefined,
+      fotoURL: undefined,
+    },
+    {
+      id: '3578',
+      nome: 'pax',
+      dataNasc: undefined,
+      fotoURL: undefined,
+    },
+    {
+      id: '616',
+      nome: 'magnesio',
+      dataNasc: undefined,
+      fotoURL: undefined,
+    },
+    {
+      id: '777',
+      nome: 'deusvult',
+      dataNasc: undefined,
+      fotoURL: undefined,
+    }
+  ];
+
+  selecionaPessoa(pessoa : Pessoa) {
+    this.pessoaSelecionada = pessoa;
+  }
 
   ngOnInit(): void {
-    this.pessoaLista = [
-      {
-        id: 11111,
-        nome: 'ullll',
-        email: 'ula@lol.com',
-        dataNasc: undefined,
-        fotoURL: undefined,
-      },
-      {
-        id: 3578,
-        nome: 'pax',
-        email: 'saas@jooj.com',
-        dataNasc: undefined,
-        fotoURL: undefined,
-      },
-      {
-        id: 616,
-        nome: 'magnesio',
-        email: 'fermentacao@quimica.com',
-        dataNasc: undefined,
-        fotoURL: undefined,
-      },
-      {
-        id: 777,
-        nome: 'deusvult',
-        email: 'inri@bless.com',
-        dataNasc: undefined,
-        fotoURL: undefined,
-      }
-    ]
   }
 
 }

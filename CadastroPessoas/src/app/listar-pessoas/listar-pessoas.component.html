@@ -1,4 +1,3 @@
-<!-- TODO: put this in 'listar-pessoas'-->
 <!-- showing 'pessoas' using table -->
 <div class="showPessoasContainer">
     <div class="showPessoasTitle">
@@ -8,9 +7,14 @@
     <div class="showPessoas" *ngFor="let pessoa of pessoaLista">
         <span class="showPessoasNome">{{ pessoa.nome }}</span>
         <div class="showPessoasOpcoes">
-            <button class="showPessoasPerfil" routerLink="/mostrar-perfil">Ver Perfil</button>
-            <button class="showPessoasEditar" routerLink="/editar-pessoa">Editar</button>
+            <button class="showPessoasPerfil" (click)="selecionaPessoa(pessoa)" routerLink="/mostrar-perfil">Ver Perfil</button>
+            <button class="showPessoasEditar" (click)="selecionaPessoa(pessoa)" routerLink="/editar-pessoa">Editar</button>
             <button class="showPessoasDeletar">Deletar</button>
         </div>
     </div>
 </div>
+
+<app-cadastrar-pessoas [pessoaListaCadastro]="this.pessoaLista"></app-cadastrar-pessoas>
+<app-editar-pessoa [pessoaListaEdita]="this.pessoaLista"></app-editar-pessoa>
+<app-editar-pessoa [pessoaInfo]="this.pessoaSelecionada"></app-editar-pessoa>
+<!-- | missing mostrar-perfil | -->

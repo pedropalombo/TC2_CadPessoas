@@ -3,21 +3,23 @@
         <div class="field">
             <label class="label">Nome</label>
             <div class="control">
-                <input type="text" placeholder="Nome do aluno">
+                <input [(ngModel)]="this.pessoaNome" type="text" placeholder="Nome do aluno">
             </div>
         </div>
         <div class="field">
             <label class="label">Data de nascimento</label>
             <div class="control">
-                <input type="date">
+                <input [(ngModel)]="this.pessoaDataNasc" type="date">
             </div>
         </div>
         <div class="field">
             <label class="label">Foto</label>
             <div class="control">
-                <input type="text" placeholder="URL da foto do aluno. Opcional">
+                <input [(ngModel)]="this.pessoaPhotoURL" type="text" placeholder="URL da foto do aluno. Opcional">
             </div>
         </div>
-        <button class="cadastrarPessoa">Cadastrar</button>
+        <button class="cadastrarPessoa" (click)="enviaPessoa()">Cadastrar</button>
     </form>
+
+    <span> {{pessoaListaCadastro}} </span>
 </div>
