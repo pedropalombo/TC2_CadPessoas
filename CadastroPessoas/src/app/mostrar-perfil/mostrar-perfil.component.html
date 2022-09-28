@@ -1,14 +1,21 @@
 <div class="showProfileContainer">
-    <a routerLink="/">Voltar</a>
     <div class="pessoaInfoContainer">
         <div class="mainInfo">
-            <span>Nome</span>
-            <span>Data</span>    
+            <span class="nomePessoa">{{this.newPessoa.nome}}</span>
+            <span class="dataPessoa">{{this.dateFormated}}</span>
+            <!--
+                <span>{{pessoaSendoMostrada.nome}}</span>
+            <span>{{pessoaSendoMostrada.dataNasc}}</span> 
+            -->   
         </div>
         
-        <span>#idididid</span><br>
+        <!--
+            <span>{{pessoaSendoMostrada.id}}</span>
+        -->
+        <span class="idPessoa">id: {{this.newPessoa.id}}</span><br>
 
-        <img src="aaaa">
+        <img class="imgPessoa" src='https://thispersondoesnotexist.com/image'>
     </div>
-    
+
+    <a routerLink="/">Voltar</a>
 </div>

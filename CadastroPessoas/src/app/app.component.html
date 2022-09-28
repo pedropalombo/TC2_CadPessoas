@@ -8,11 +8,9 @@
       </span>
   </div>
 
-  <!-- TODO: add a 'chosen' style for when the option is selected -->
   <!-- navigation text options -->
   <div class="choiceContainer">
 
-    <!-- TODO: make the click send user to the respective page -->
     <!-- using 'showProfile' for testing -->
     <nav class="navigationContainer">
       <a class="option listar" routerLink="/listar-pessoas">Listar Pessoas</a>
@@ -22,6 +20,7 @@
 
   <!-- dividing line after the nav options -->
   <div class="containerSeparation"></div>
+  <router-outlet></router-outlet>
 
   <div class="presentationContainer">
     <span> Projeto feito pelos magnânimos:
@@ -30,6 +29,4 @@
       Denilson Andrade 
     </span>
   </div>
-
-  <router-outlet></router-outlet>
 </div>

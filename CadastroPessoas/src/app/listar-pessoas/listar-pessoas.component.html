@@ -1,16 +1,19 @@
-<!-- TODO: put this in 'listar-pessoas'-->
 <!-- showing 'pessoas' using table -->
 <div class="showPessoasContainer">
     <div class="showPessoasTitle">
         <h2>Nome</h2>
         <h2>Opções</h2>
     </div>
-    <div class="showPessoas" *ngFor="let pessoa of pessoaLista">
+    <div class="showPessoas" *ngFor="let pessoa of pessoaLista; track">
         <span class="showPessoasNome">{{ pessoa.nome }}</span>
         <div class="showPessoasOpcoes">
-            <button class="showPessoasPerfil" routerLink="/mostrar-perfil">Ver Perfil</button>
-            <button class="showPessoasEditar" routerLink="/editar-pessoa">Editar</button>
-            <button class="showPessoasDeletar">Deletar</button>
+            <button class="showPessoasPerfil" (click)="verPerfilPlaceholder(pessoa)" (click)="selecionaPessoa(pessoa)" routerLink="/mostrar-perfil">Ver Perfil</button>
+            <button class="showPessoasEditar" (click)="selecionaPessoa(pessoa)" routerLink="/editar-pessoa">Editar</button>
+            <button class="showPessoasDeletar" (click)="removePessoa(pessoa)">Deletar</button>
         </div>
     </div>
 </div>
+
+<app-cadastrar-pessoas [pessoaListaCadastro]="this.pessoaLista" hidden></app-cadastrar-pessoas><!--[testeStringCadastra]="testeString"-->
+<app-editar-pessoa [pessoaListaEdita]="this.pessoaLista" [pessoaInfo]="this.pessoaSelecionada" hidden></app-editar-pessoa><!--[testeStringEdita]="testeString"-->
+<app-mostrar-perfil [pessoaSendoMostrada]="this.pessoaSelecionada" hidden></app-mostrar-perfil>
