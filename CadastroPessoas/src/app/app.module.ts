@@ -7,6 +7,7 @@ import { ListarPessoasComponent } from './listar-pessoas/listar-pessoas.componen
 import { CadastrarPessoasComponent } from './cadastrar-pessoas/cadastrar-pessoas.component';
 import { MostrarPerfilComponent } from './mostrar-perfil/mostrar-perfil.component';
 import { EditarPessoaComponent } from './editar-pessoa/editar-pessoa.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { EditarPessoaComponent } from './editar-pessoa/editar-pessoa.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
