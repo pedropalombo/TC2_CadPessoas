@@ -3,19 +3,19 @@
         <div class="field">
             <label class="label">Nome</label>
             <div class="control">
-                <input [(ngModel)]="this.pessoaNome" type="text" placeholder="Nome do aluno">
+                <input name="pessoaNome" [(ngModel)]="this.pessoaNome" type="text" placeholder="Nome do aluno">
             </div>
         </div>
         <div class="field">
-            <label class="label">Data de nascimento</label>
+            <label class="label dataNasc">Data de nascimento</label>
             <div class="control">
-                <input [(ngModel)]="this.pessoaDataNasc" type="date">
+                <input name="pessoaDataNasc" [(ngModel)]="this.pessoaDataNasc" type="date" min="1901-01-01" max="2022-09-28">
             </div>
         </div>
         <div class="field">
             <label class="label">Foto</label>
             <div class="control">
-                <input [(ngModel)]="this.pessoaPhotoURL" type="text" placeholder="URL da foto do aluno. Opcional">
+                <input name="pessoaPhotoUrl" [(ngModel)]="this.pessoaPhotoURL" type="text" placeholder="URL da foto do aluno. Opcional">
             </div>
         </div>
         <button class="cadastrarPessoa" (click)="enviaPessoa()">Cadastrar</button>

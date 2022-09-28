@@ -4,31 +4,20 @@
             <label class="label">Nome</label>
             <div class="control">
                 <input type="text" [(ngModel)]="pessoaNome" placeholder="Nome do aluno">
-                <span>nome: {{pessoaNome}}</span>
             </div>
         </div>
         <div class="field">
-            <label class="label">Data de nascimento</label>
+            <label class="label dataNasc">Data de nascimento</label>
             <div class="control">
-                <input [(ngModel)]="pessoaData" type="date">
-                data: {{pessoaData}}
+                <input [(ngModel)]="pessoaData" type="date" min="1901-01-01" max="2022-09-28">
             </div>
         </div>
         <div class="field">
             <label class="label">Foto</label>
             <div class="control">
                 <input [(ngModel)]="pessoaPhotoURL" type="text" placeholder="URL da foto do aluno. Opcional">
-                url: {{pessoaPhotoURL}}
             </div>
         </div>
         <button class="editarPessoa" (click) = "enviaPessoa()">Editar</button>
     </form>
-</div>
-
-
-<div class="showPessoas" *ngFor="let pessoa of pessoaListaEdita">
-    <span class="showPessoasNome">{{ pessoa.nome }}</span>
-    <div class="showPessoasOpcoes">
-        <button class="showPessoasDeletar">Deletar</button>
-    </div>
 </div>
