@@ -7,9 +7,9 @@
     <div class="showPessoas" *ngFor="let pessoa of pessoaLista; track">
         <span class="showPessoasNome">{{ pessoa.nome }}</span>
         <div class="showPessoasOpcoes">
-            <button class="showPessoasPerfil" (click)="verPerfilPlaceholder(pessoa)" (click)="selecionaPessoa(pessoa)" routerLink="/mostrar-perfil">Ver Perfil</button>
-            <button class="showPessoasEditar" (click)="selecionaPessoa(pessoa)" routerLink="/editar-pessoa">Editar</button>
-            <button class="showPessoasDeletar" (click)="removePessoa(pessoa)">Deletar</button>
+            <button class="showPessoasBtn perfil" (click)="verPerfilPlaceholder(pessoa)" (click)="selecionaPessoa(pessoa)" routerLink="/mostrar-perfil">Ver Perfil</button>
+            <button class="showPessoasBtn editar" (click)="selecionaPessoa(pessoa)" routerLink="/editar-pessoa">Editar</button>
+            <button class="showPessoasBtn deletar" (click)="removePessoa(pessoa)">Deletar</button>
         </div>
     </div>
 </div>

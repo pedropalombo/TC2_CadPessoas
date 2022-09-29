@@ -1,3 +1,24 @@
+body {
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+
+    margin: 0;
+
+    background-color: rgba(0, 129, 129, 0.641);
+
+}
+
+.headerContainer {
+    font-family: 'Quicksand', sans-serif;
+
+    color: rgb(42, 42, 42);
+
+    margin-top: 5%;
+}
+
 .mainPageContainer {
     text-align: center;
 
@@ -14,15 +35,25 @@
     margin-top: 3vh;
 
     .option {
+        color: rgb(0, 19, 165);
+
+        font-family: helvetica;
+        text-decoration: none;
+
         padding: 2vh;
     }
 }
 
-.choiceContainer {
-    border-bottom: 2px solid black; 
-    width: 100%;
+.containerSeparation {
+    border-bottom: 2px solid rgb(42, 42, 42); 
+    width: 80%;
+
+    margin: 0 auto;
 }
 
 .presentationContainer {
     font-style: italic;
+    font-family: Garamond, serif;
+
+    font-weight: 500;
 }
