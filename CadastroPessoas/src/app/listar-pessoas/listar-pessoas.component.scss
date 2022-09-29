@@ -33,39 +33,62 @@
     .showPessoasTitle{
         display: flex;
         justify-content: space-around;
+
+        color: rgb(42, 42, 42);
     }
 
     .showPessoas{
+        background-color: rgb(223, 223, 223);
+        
         display: flex;
         justify-content: space-around;
         align-items: center;
 
-        border: 2px solid black;
+        border: 2px solid rgb(42, 42, 42);
 
         padding: 30px;
+
+        margin: 0 auto;
         margin-bottom: 10px;
+
+        width: 80%;
+
         .showPessoasNome{
             width: 50%;
+
+            //height: 3vh;
+            
+            top: 50%;
+
+            //
+            
         }
         .showPessoasOpcoes {
             width: 50%;
             display: flex;
             justify-content: center;
-    
+
+            border-left: 1px solid black;
+
             button {
                 margin-left: 10px;
-                width: 15%;
+                width: 30%;
                 padding: 10px 0px;
                 border-radius: 8px;
             }
-            .showPessoasPerfil{
-                background-color: green;
+
+            .showPessoasBtn {
+                font-style: italic;
+                min-width: none;
             }
-            .showPessoasEditar{
-                background-color: yellow;
+            .showPessoasBtn.perfil{
+                background-color: rgba(0, 128, 0, 0.611);
             }
-            .showPessoasDeletar{
-                background-color: red;
+            .showPessoasBtn.editar{
+                background-color: rgba(255, 255, 0, 0.826);
+            }
+            .showPessoasBtn.deletar{
+                background-color: rgba(255, 0, 0, 0.86);
             }
         }
     }

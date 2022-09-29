@@ -1,32 +1,35 @@
-<!-- main page container -->
-<div class="mainPageContainer">
-  <div class="headerContainer">
+<body>
+  <!-- main page container -->
+  <div class="mainPageContainer">
+    <div class="headerContainer">
 
       <!-- header text -->
       <span class="headerText">
-          Cadastro de Pessoas
+        Cadastro de Pessoas
       </span>
+    </div>
+
+    <!-- navigation text options -->
+    <div class="choiceContainer">
+
+      <!-- using 'showProfile' for testing -->
+      <nav class="navigationContainer">
+        <a class="option listar" routerLink="/listar-pessoas">Listar Pessoas</a>
+        <a class="option cadastrar" routerLink="/cadastrar-pessoa">Cadastrar Pessoa</a>
+      </nav>
+    </div>
+
+    <!-- dividing line after the nav options -->
+    <div class="containerSeparation"></div>
+    <router-outlet></router-outlet>
+
+    <div class="presentationContainer">
+      <span> Projeto feito pelos magnânimos:
+        Pedro Palombo
+        Yuri Leonel
+        Denilson Andrade
+      </span>
+    </div>
   </div>
 
-  <!-- navigation text options -->
-  <div class="choiceContainer">
-
-    <!-- using 'showProfile' for testing -->
-    <nav class="navigationContainer">
-      <a class="option listar" routerLink="/listar-pessoas">Listar Pessoas</a>
-      <a class="option cadastrar" routerLink="/cadastrar-pessoa">Cadastrar Pessoa</a>
-    </nav>
-  </div>
-
-  <!-- dividing line after the nav options -->
-  <div class="containerSeparation"></div>
-  <router-outlet></router-outlet>
-
-  <div class="presentationContainer">
-    <span> Projeto feito pelos magnânimos:
-      Pedro Palombo
-      Yuri Leonel
-      Denilson Andrade 
-    </span>
-  </div>
-</div>
+</body>
